@@ -118,8 +118,13 @@
               "devServerTarget": "pr7:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "pr7"
 }
