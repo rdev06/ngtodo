@@ -1,5 +1,5 @@
 <div [ngClass]=setClasses()>
-  <input (change)="onToggle(todo)" type="checkbox" />
+  <input (change)="onToggle(todo)" type="checkbox" [checked]="todo.completed" />
   <a (click)="onEdit(todo)">
     <span *ngIf="todo !== edit">{{todo.title}}</span>
     <input *ngIf="todo === edit" [(ngModel)]="todo.title" (blur)="update()" (keyup.enter)="update()">
